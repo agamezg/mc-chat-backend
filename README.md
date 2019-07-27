@@ -1,4 +1,4 @@
-## FRONTEND APP
+## BACKEND CHAT APP
 
 Para iniciar la app, estando parado en el directorio raiz ejecutar:
 
