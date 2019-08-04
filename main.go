@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"pkg/websocket"
+	"github.com/agamezg/chat-go-react-app/pkg/websocket"
 )
 
 // maneja nuestro endpoint del WebSocket
