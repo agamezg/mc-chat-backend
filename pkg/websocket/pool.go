@@ -26,14 +26,14 @@ func (pool *Pool) Start() {
 			fmt.Println("Tabaño del pool de conexiones: ", len(pool.Clients))
 			for client, _ := range pool.Clients {
 				fmt.Println(client)
-				client.Conn.WriteJSON(Message{Type: 1, Body: "atr perro..."})
+				client.Conn.WriteJSON(Message{Type: 1, Body: "Un uusuario se ha unido al chat..."})
 			}
 			break
 		case client := <-pool.Unregister:
 			delete(pool.Clients, client)
 			fmt.Println("Tabaño del pool de conexiones: ", len(pool.Clients))
 			for client, _ := range pool.Clients {
-				client.Conn.WriteJSON(Message{Type: 1, Body: "...cajeteala piola gato"})
+				client.Conn.WriteJSON(Message{Type: 1, Body: "...Un usuario ha salido"})
 			}
 			break
 		case message := <-pool.Broadcast:
